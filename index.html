@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffe Shop</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- AOS Scrool animation -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- fontalsum -->
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap"
+        rel="stylesheet">
+    <!-- Typing -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- fontAwsume -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="./animation.js"></script>
+    <style>
+        body {
+            font-family: "Google Sans Flex", sans-serif;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <nav class="backdrop-blur-md bg-white/30 shadow-md sticky top-0 z-50 rounded ">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <span class="text-3xl font-serif">Fresh Coffee <i class="fa-solid fa-leaf"
+                            style="color: rgb(0, 134, 18);"></i></span>
+                </div>
+
+                <!--  Menu -->
+
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-600 hover:text-red-500 transition text-md">Home</a>
+                    <a href="#Newmenu" class="text-gray-600 hover:text-red-500 transition text-md">Newment</a>
+                    <a href="#ourmenu" class="text-gray-600 hover:text-red-500 transition text-md">Our Menu</a>
+                    <a href="#contace" class="text-gray-600 hover:text-red-500 transition text-md">Contace</a>
+                </div>
+                <button class="py-2 px-4 bg-blue-500 rounded text-white font-bold">Getstard</button>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--  hero section -->
+    <section id="home" class="duration-700">
+        <div class="bg-gradient-to-r from-orange-700 to-amber-700 text-white py-20">
+            <div class="container mx-auto px-4 text-center grid md:grid-cols-2">
+                <div class="py-8 justify-between items-center space-x-10">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6 ">Welcome <span id="typing"
+                            class="text-6xl mb-8 max-w-2xl mx-auto  "> </span> </h1>
+                    <div class=" justify-center items-center">
+                        <p class="text-gray-200">Good Morning Everyone Wellcom to my Fresh Coffee
+                            <br> We have a lot of Drink for singgle and Love
+                            free delivery <br>for people around the world
+                            <br> Thank..
+                        </p>
+
+                    </div>
+                    <br>
+                    <div class="space-x-3">
+                        <button
+                            class="bg-sky-500 py-3 rounded-lg px-6 hover:bg-blue-700 duration-700 mt-4 text-white font-bold text-md ">Telegram</button>
+                        <button
+                            class=" font-bold text-md bg-yellow-500 text-white py-3 rounded-lg px-6 hover:bg-red-400 duration-700 ">Contaice</button>
+                    </div>
+                </div>
+
+                <div class="flex justify-center items-center mb-3 hero-img">
+                    <img class="bg-cover opacity-100 img  " src="./coffee.png" alt="">
+                </div>
+
+
+            </div>
+
+        </div>
+
+        </div>
+        <div class="w-full justify-center items-center px-2 mb-8">
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center w-full">
+                <p>@Copyright 2030,All right Recovers</p>
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+    <!-- Feature -->
+
+    <section id="Newmenu" class="py-16 bg-gray-200  ">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-900">This a Famouse <br> <span id="text"></span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+                <!-- item1 -->
+                <div data-aos="zoom-in-up" class=" flex justify-center items-center px-2">
+                    <div
+                        class="bg-white max-w-md h-80  rounded-sm hover:shadow-md cursor-pointer hover:scale-105  duration-700">
+                        <div class="py-3 px-6 justify-center items-center">
+                            <img class="rounded-md"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBgBo_O9J3tCtYjXTY_YuweB0KA_LQQ_fBcA&s"
+                                alt="">
+                        </div>
+                        <div class="p-2 items-center text-center">
+                            <h1 class=" font-serif font-bold text-lg ">Coffee fine Love <i
+                                    class="fa-solid fa-heart text-red-600"></i> </h1>
+                            <p class=" text-gray-700 text-sm">Drink Now <span
+                                    class="text-red-500 font-bold">$5.55</span></p>
+                        </div>
+                        <div class="flex justify-center items-center ">
+                            <button class=" p-3  bg-pink-500 text-white py-2 px-4 rounded">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- item2 -->
+                <div data-aos="zoom-in-up" data-aos-delay="100" class=" flex justify-center items-center px-4">
+                    <div
+                        class="bg-white max-w-md h-80  rounded-sm hover:shadow-md cursor-pointer hover:scale-105 duration-700">
+                        <div class="py-3 px-6 justify-center items-center">
+                            <img class="rounded-md shadow hover: shadow-green-500"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtMy7PrBsVBDoE9lvTS6-KEUmHzX0Kj4M-gw&s"
+                                alt="">
+                        </div>
+                        <div class="p-2 items-center text-center">
+                            <h1 class=" font-serif font-bold text-lg ">Coffee fine Love <i
+                                    class="fa-solid fa-heart text-red-600"></i> </h1>
+                            <p class=" text-gray-700 text-sm">Drink Now <span
+                                    class="text-red-500 font-bold">$5.99</span></p>
+                        </div>
+                        <div class="flex justify-center items-center ">
+                            <button class=" p-3  bg-green-500 text-white py-2 px-4 rounded">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- item3 -->
+                <div data-aos="zoom-in-up" data-aos-delay="100" class=" flex justify-center items-center px-4">
+                    <div
+                        class="bg-white max-w-md h-80  rounded-sm hover:shadow-md cursor-pointer hover:scale-105  duration-700">
+                        <div class="py-3 px-6 justify-center items-center ">
+                            <img class="rounded-md w-68 h-48 shadow hover:shadow-red-400"
+                                src="https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2018/09/1200/675/starbucks_love.jpg?ve=1&tl=1"
+                                alt="">
+                        </div>
+                        <div class="p-2 items-center text-center">
+                            <h1 class=" font-serif font-bold text-lg ">Coffee fine Parner <i
+                                    class="fa-solid fa-heart text-red-600"></i> </h1>
+                            <p class=" text-gray-700 text-sm">Drink Now <span
+                                    class="text-red-500 font-bold">$6.99</span></p>
+                        </div>
+                        <div class="flex justify-center items-center ">
+                            <button
+                                class=" p-3  bg-blue-400 hover:bg-blue-700 focus:ring-blue-700 focus:outline-none  text-white py-2 px-4 rounded">Buy
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- item4 -->
+                <div data-aos="zoom-in-up" data-aos-delay="100" class=" flex justify-center items-center px-4">
+                    <div
+                        class="bg-white max-w-md h-80  rounded-sm hover:shadow-md cursor-pointer hover:scale-105 duration-700">
+                        <div class="py-3 px-6 justify-center items-center">
+                            <img class="rounded-md w-68 h-48 bg-cover  shadow hover:shadow-blue-400"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4XhpjWrxseCw_W--dbGgSOgcwfShI0RcPpw&s"
+                                alt="">
+                        </div>
+                        <div class="p-2 items-center text-center">
+                            <h1 class=" font-serif font-bold text-lg ">Coffee Fresh drink <i
+                                    class="fa-solid fa-heart text-red-600"></i> </h1>
+                            <p class=" text-gray-700 text-sm">Drink Now <span
+                                    class="text-red-500 font-bold">$9.99</span></p>
+                        </div>
+                        <div class="flex justify-center items-center ">
+                            <button
+                                class=" p-3  bg-blue-400 hover:bg-blue-700 focus:ring-blue-700 focus:outline-none  text-white py-2 px-4 rounded">Buy
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- item5-->
+                <div data-aos="zoom-in-up" data-aos-delay="100" class=" flex justify-center items-center px-4">
+                    <div
+                        class="bg-white max-w-md h-80  rounded-sm hover:shadow-md cursor-pointer hover:scale-105  duration-700">
+                        <div class="py-3 px-6 justify-center items-center">
+                            <img class="rounded-md w-68 h-48 bg-cover shadow hover:shadow-gray-600"
+                                src="https://i.pinimg.com/564x/9b/58/2c/9b582c88e80ab7a7ec66354bb124e386.jpg" alt="">
+                        </div>
+                        <div class="p-2 items-center text-center">
+                            <h1 class=" font-serif font-bold text-lg ">Coffee Steve <i
+                                    class="fa-solid fa-heart text-red-600 hover:scale-125  duration-300"></i>
+                            </h1>
+                            <p class=" text-gray-700 text-sm">Drink Now <span
+                                    class="text-red-500 font-bold">$6.99</span></p>
+                        </div>
+                        <div class="flex justify-center items-center ">
+                            <button
+                                class=" p-3  bg-blue-400 hover:bg-blue-700 focus:ring-blue-700 focus:outline-none  text-white py-2 px-4 rounded">Buy
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- item6-->
+                <div data-aos="zoom-in-up" data-aos-delay="100" class=" flex justify-center items-center px-4">
+                    <div
+                        class="bg-white max-w-md h-80  rounded-sm hover:shadow-md cursor-pointer hover:scale-105  duration-700">
+                        <div class="py-3 px-6 justify-center items-center">
+                            <img class="rounded-md w-68 h-48 bg-cover shadow hover:shadow-gray-600"
+                                src="https://www.aicr.org/wp-content/uploads/2020/06/peppermint-tea-on-teacup-1417945.jpg"
+                                alt="">
+                        </div>
+                        <div class="p-2 items-center text-center">
+                            <h1 class=" font-serif font-bold text-lg ">Fresh Tea <i
+                                    class="fa-brands fa-envira hover:scale-125  duration-300"
+                                    style="color: rgb(0, 134, 18);"></i> </h1> <br>
+                            <p class=" text-gray-700 text-sm">Drink Now <span
+                                    class="font-bold text-red-500 ">$15.55</span></​>
+                        </div>
+                        <div class="flex justify-center items-center ">
+                            <button
+                                class=" p-3  bg-blue-400 hover:bg-blue-700 focus:ring-blue-700 focus:outline-none  text-white py-2 px-4 rounded">Buy
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- item7-->
+                <div data-aos="zoom-in-up" data-aos-delay="100" class=" flex justify-center items-center px-4">
+                    <div
+                        class="bg-white max-w-md h-80  rounded-sm hover:shadow-md cursor-pointer hover:scale-105  duration-700">
+                        <div class="py-3 px-6 justify-center items-center">
+                            <img class="rounded-md w-68 h-48 bg-cover shadow hover:shadow-gray-600"
+                                src="https://maharishiayurvedaindia.com/cdn/shop/articles/herbal_teas_and_benefits_5349b7d2-95dd-41ea-9336-b25212d1019d.jpg?v=1771406243"
+                                alt="">
+                        </div>
+                        <div class="p-2 items-center text-center">
+                            <h class=" font-serif font-bold text-lg ">Fresh Tea <i
+                                    class="fa-brands fa-envira hover:scale-125  duration-300"
+                                    style="color: rgb(0, 134, 18);"></i> </h> <br>
+                            <p class=" text-gray-700 text-sm">Drink Now <span
+                                    class="font-bold text-red-500 ">$10.99</span></​>
+                        </div>
+                        <div class="flex justify-center items-center ">
+                            <button
+                                class=" p-3  bg-blue-400 hover:bg-blue-700 focus:ring-blue-700 focus:outline-none  text-white py-2 px-4 rounded">Buy
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- item8-->
+                <div data-aos="zoom-in-up" data-aos-delay="100" class=" flex justify-center items-center px-4">
+                    <div
+                        class="bg-white max-w-md h-80  rounded-sm hover:shadow-md cursor-pointer hover:scale-105  duration-700">
+                        <div class="py-3 px-6 justify-center items-center">
+                            <img class="rounded-md w-68 h-48 bg-cover shadow hover:shadow-gray-600"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3jVV32m57vfmaWpXIRO3iRMgWRyoqk9aXHA&s"
+                                alt="">
+                        </div>
+                        <div class="p-2 items-center text-center">
+                            <h class=" font-serif font-bold text-lg ">Prefer Tea <i
+                                    class="fa-brands fa-envira hover:scale-125  duration-300"
+                                    style="color: rgb(0, 134, 18);"></i> </h> <br>
+                            <p class=" text-gray-700 text-sm">Drink Now <span
+                                    class="font-bold text-red-500 ">$35.99</span></p>
+                        </div>
+                        <div class="flex justify-center items-center ">
+                            <button
+                                class=" p-3  bg-blue-400 hover:bg-blue-700 focus:ring-blue-700 focus:outline-none  text-white py-2 px-4 rounded">Buy
+                                Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+    </section>
+
+    <section id="ourmenu" class="bg-gray-800 px-8 py-20">
+        <h1 class="text-3xl text-center font-bold text-white mb-12">Other Our Menu </h1>
+        <div class="container mx-auto px-4 ">
+
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gab-8 mt-4 ">
+
+                <a
+                    href="https://www.google.com/search?sca_esv=8fb6979f6721b93f&sxsrf=ANbL-n4xI0L_ZK9tK6wgHVhopGazJ7Y9Zg:1771912881935&q=food+pizza&uds=ALYpb_ncDc7jTlmw6Mmq7NjuX5c-9bWO6CgCp9ZLCkqnNL4DozGxmw5AuSkKgTP4U-wVvSgpBrLd4MQAE6jRXyWX02Fe14CQv4Lro0OLy3A7rfQ4g4JN0ZnxRAkrDt6jw9guRP9TedylknE2Jzpb9GmC7yyXyhaksA&udm=2&sa=X&ved=2ahUKEwi7hJrvufGSAxWdSmwGHZxDKU8QxKsJKA56BQihARAB&ictx=0&biw=2304&bih=1094&dpr=0.83#sv=CAMSVhoyKhBlLTFCRGptbXBJNkF5MHpNMg4xQkRqbW1wSTZBeTB6TToOZ2NHTzVLeVlzeTRSa00gBCocCgZtb3NhaWMSEGUtMUJEam1tcEk2QXkwek0YADABGAcg_JeLvAIwAkoIEAIYAiACKAI">
+                    <div class="mb-5 px-4 ">
+                        <!-- items1 -->
+                        <div data-aos="zoom-in-up" data-aos-delay="100"
+                            class="border p-5  rounded-xl text-center shadow hover:scale-105  duration-700 hover:shadow-md  ">
+                            <div
+                                class="bg-gray-900 rounded-lg text-center h-40 mb-4 flex justify-center items-center hover:scale-105 transition duration-700 cursor-pointer ">
+                                <img class="h-40 rounded-  bg-cover blur-0 w-full rounded "
+                                    src="https://cdn.britannica.com/08/177308-050-94D9D6BE/Food-Pizza-Basil-Tomato.jpg">
+                            </div>
+                            <h1 class="text-xl text-white">Pizza Love</h1>
+                            <p class="text-red-600 mb-3 "><del>$15.99</del> $5.99</p>
+                            <button
+                                class="font-serif font-bold text-white bg-blue-400 hover:bg-blue-700 py-2 px-5 rounded-md">Buy
+                                Now</button>
+                        </div>
+                    </div>
+                </a>
+
+
+                <div class="px-4 mb-4">
+                    <!-- items2 -->
+                    <div data-aos="zoom-in-up" data-aos-delay="100"
+                        class="border p-5  rounded-xl text-center shadow hover:scale-105 duration-700 hover:shadow-md  ">
+                        <div class="bg-gray-900 rounded-lg text-center h-40 mb-4 flex justify-center items-center ">
+                            <img class="h-40 rounded-  bg-cover  hover:scale-105  duration-700 cursor-pointer w-full rounded"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR8ktWwxGRbYhlQwUVmzvnJ-iIDm5Gubnv9g&s">
+                        </div>
+                        <h1 class="text-xl text-white">Burgers</h1>
+                        <p class="text-red-600 mb-3 ">$5.99</p>
+                        <button
+                            class="font-serif font-bold text-white bg-blue-400 hover:bg-blue-700 py-2 px-5 rounded-md">Buy
+                            Now</button>
+                    </div>
+                </div>
+
+                <div class="px-4 mb-4">
+                    <!-- items3 -->
+                    <div data-aos="zoom-in-up" data-aos-delay="100"
+                        class="border p-5  rounded-xl text-center shadow hover:scale-105duration-700 hover:shadow-md ">
+                        <div class="bg-gray-900 rounded-lg text-center h-40 mb-4 flex justify-center items-center ">
+                            <img class="h-40 rounded-  bg-cover  hover:scale-105  duration-700 cursor-pointer w-full rounded"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfeuOgA6nOEyNdQCjTAdZUZ-pWSlaQa2cAZQ&s">
+                        </div>
+                        <h1 class="text-xl text-white">Spaghti</h1>
+                        <p class="text-red-600 mb-3 "> $9.99</p>
+                        <button
+                            class="font-serif font-bold text-white bg-blue-400 hover:bg-blue-700 py-2 px-5 rounded-md">Buy
+                            Now</button>
+                    </div>
+                </div>
+
+                <div class="px-4">
+                    <!-- items4 -->
+                    <div data-aos="zoom-in-up" data-aos-delay="100"
+                        class="border p-5  rounded-xl text-center shadow hover:scale-105 duration-700 hover:shadow-md ">
+                        <div class="bg-gray-900 rounded-lg text-center h-40 mb-4 flex justify-center items-center ">
+                            <img class="h-40 rounded-  bg-cover  hover:scale-105  duration-700 cursor-pointer w-full rounded"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-_1tKLlaC2iu22gDCTyCoMaMolAId1L3K1g&s">
+                        </div>
+                        <h1 class="text-xl text-white">Noodles</h1>
+                        <p class="text-red-600 mb-3 "> $6.99</p>
+                        <button
+                            class="font-serif font-bold text-white  bg-blue-400 hover:bg-blue-700 py-2 px-5 rounded-md">Buy
+                            Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- row2 -->
+
+        <div class="container mx-auto px-4 mb-9 ">
+
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gab-8 mt-4 ">
+
+                <a href="">
+                    <div class="mb-5 px-4 ">
+                        <!-- items5 -->
+                        <div data-aos="zoom-in-up" data-aos-delay="100"
+                            class="border p-5  rounded-xl text-center shadow hover:scale-105  duration-700 hover:shadow-md  ">
+                            <div
+                                class="bg-gray-900 rounded-lg text-center h-40 mb-4 flex justify-center items-center hover:scale-105 transition duration-700 cursor-pointer ">
+                                <img class="h-40 rounded-  bg-cover blur-0 w-full rounded "
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyZqxhRNciIXpAFlRME1RdeI-mLyaXoNUiSg&s">
+                            </div>
+                            <h1 class="text-xl text-white">Rice with pork</h1>
+                            <p class="text-red-600 mb-3 "><del>$9.99</del> $3.99</p>
+                            <button
+                                class="font-serif font-bold text-white bg-blue-400 hover:bg-blue-700 py-2 px-5 rounded-md">Buy
+                                Now</button>
+                        </div>
+                    </div>
+                </a>
+
+                <div class="px-4 mb-4">
+                    <!-- items6 -->
+                    <div data-aos="zoom-in-up" data-aos-delay="100"
+                        class="border p-5  rounded-xl text-center shadow hover:scale-105  duration-700 hover:shadow-md  ">
+                        <div class="bg-gray-900 rounded-lg text-center h-40 mb-4 flex justify-center items-center ">
+                            <img class="h-40 rounded-  bg-cover  hover:scale-105 duration-700 cursor-pointer w-full rounded"
+                                src="https://images.getrecipekit.com/20220904015448-veg-20fried-20rice.png?aspect_ratio=16:9&quality=90&">
+                        </div>
+                        <h1 class="text-xl text-white">Rice with Beef</h1>
+                        <p class="text-red-600 mb-3 ">$5.99</p>
+                        <button
+                            class="font-serif font-bold text-white bg-blue-400 hover:bg-blue-700 py-2 px-5 rounded-md">Buy
+                            Now</button>
+                    </div>
+                </div>
+
+                <div class="px-4 mb-4">
+                    <!-- items7 -->
+                    <div data-aos="zoom-in-up" data-aos-delay="100"
+                        class="border p-5  rounded-xl text-center shadow hover:scale-105  duration-700 hover:shadow-md ">
+                        <div class="bg-gray-900 rounded-lg text-center h-40 mb-4 flex justify-center items-center ">
+                            <img class="h-40 rounded-  bg-cover  hover:scale-105 duration-700 cursor-pointer w-full rounded"
+                                src="https://assets.tmecosys.com/image/upload/t_web_rdp_recipe_584x480/img/recipe/ras/Assets/e8ffaa3b8a2d7d1d418a5bde137afdc4/Derivates/dd2be3c80ad6c2197d4734825abe0809384d4210.jpg">
+                        </div>
+                        <h1 class="text-xl text-white">China Noodle</h1>
+                        <p class="text-red-600 mb-3 "> $9.99</p>
+                        <button
+                            class="font-serif font-bold text-white bg-blue-400 hover:bg-blue-700 py-2 px-5 rounded-md">Buy
+                            Now</button>
+                    </div>
+                </div>
+
+                <div class="px-4">
+                    <!-- items8 -->
+                    <div data-aos="zoom-in-up" data-aos-delay="100"
+                        class="border p-5  rounded-xl text-center shadow hover:scale-105  duration-700 hover:shadow-md ">
+                        <div class="bg-gray-900 rounded-lg text-center h-40 mb-4 flex justify-center items-center ">
+                            <img class="h-40  bg-cover  hover:scale-105  duration-700 cursor-pointer w-full rounded"
+                                src="https://static01.nyt.com/images/2025/09/10/multimedia/10FD-APPETITEREX-cooking-with-kids-vflt/10FD-APPETITEREX-cooking-with-kids-vflt-mediumSquareAt3X.jpg">
+                        </div>
+                        <h1 class="text-xl text-white">Noodles Soup</h1>
+                        <p class="text-red-600 mb-3 "> $9.99</p>
+                        <button
+                            class="font-serif font-bold text-white bg-blue-400 hover:bg-blue-700 py-2 px-5 rounded-md">Buy
+                            Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Our Drinks -->
+
+        <div class="container mx-auto px-4  ">
+            <h1 class="text-white font-bold text-3xl  text-center mb-5">Our Drinks</h1>
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+
+                <div class="mb-5 px-4 ">
+                    <!-- Drink1 -->
+                    <div data-aos="zoom-in-up" data-aos-delay="300"
+                        class="border p-5  rounded-xl text-center shadow hover:scale-105  duration-700 hover:shadow-md  ">
+                        <div
+                            class="bg-gray-900 rounded-lg text-center h-40 mb-4 flex justify-center items-center hover:scale-105  duration-700 cursor-pointer ">
+                            <img class="h-40 rounded-  bg-cover blur-0 w-full rounded "
+                                src="https://img.freepik.com/free-photo/high-angle-mix-alcoholic-drinks_23-2148673763.jpg?semt=ais_hybrid&w=740&q=80">
+                        </div>
+                        <h1 class="text-xl text-white">Tea lemon</h1>
+                        <p class="text-red-600 mb-3 "> $2.99</p>
+                        <button
+                            class="font-serif font-bold text-white bg-blue-400 hover:bg-blue-700 py-2 px-5 rounded-md">Buy
+                            Now</button>
+                    </div>
+                </div>
+
+                <div class="mb-5 px-4 ">
+                    <!-- Drink2 -->
+                    <div data-aos="zoom-in-up" data-aos-delay="300"
+                        class="border p-5  rounded-xl text-center shadow hover:scale-105 transition duration-700 hover:shadow-md  ">
+                        <div
+                            class="bg-gray-900 rounded-lg text-center h-40 mb-4 flex justify-center items-center hover:scale-105 transition duration-700 cursor-pointer ">
+                            <img class="h-40 rounded-  bg-cover blur-0 w-full rounded "
+                                src="https://www.tasteofhome.com/wp-content/uploads/2024/11/Strawberry-Drink_EXPS_TOHD24_18504_LeticiaAlmeida_05.jpg">
+                        </div>
+                        <h1 class="text-xl text-white">Juice Strawberry</h1>
+                        <p class="text-red-600 mb-3 "> $1.99</p>
+                        <button
+                            class="font-serif font-bold text-white bg-blue-400 hover:bg-blue-700 py-2 px-5 rounded-md">Buy
+                            Now</button>
+                    </div>
+                </div>
+
+                <div class="mb-5 px-4 ">
+                    <!-- Drink3 -->
+                    <div data-aos="zoom-in-up" data-aos-delay="300"
+                        class="border p-5  rounded-xl text-center shadow hover:scale-105 transition duration-700 hover:shadow-md  ">
+                        <div
+                            class="bg-gray-900 rounded-lg text-center h-40 mb-4 flex justify-center items-center hover:scale-105 transition duration-700 cursor-pointer ">
+                            <img class="h-40 rounded-  bg-cover blur-0 w-full rounded "
+                                src="https://proteinpackage.co.uk/cdn/shop/files/Prime-Lemonade-Hydration-Drinks-500ml-Bottles-UK_1200x.png?v=1709906807">
+                        </div>
+                        <h1 class="text-xl text-white">PREME</h1>
+                        <p class="text-red-600 mb-3 "> $9.99</p>
+                        <button
+                            class="font-serif font-bold text-white bg-blue-400 hover:bg-blue-700 py-2 px-5 rounded-md">Buy
+                            Now</button>
+                    </div>
+                </div>
+
+                <div class="mb-5 px-4 ">
+                    <!-- Drink4 -->
+                    <div data-aos="zoom-in-up" data-aos-delay="300"
+                        class="border p-5  rounded-xl text-center shadow hover:scale-105 transition duration-700 hover:shadow-md  ">
+                        <div
+                            class="bg-gray-900 rounded-lg text-center h-40 mb-4 flex justify-center items-center hover:scale-105 transition duration-700 cursor-pointer ">
+                            <img class="h-40 rounded-  bg-cover blur-0 w-full rounded "
+                                src="https://goodtimein.co.uk/cdn/shop/files/CL8042_VK_Amazon_Listing_Product_Squares_v1_Blue_02.png?v=1726137553&width=480">
+                        </div>
+                        <h1 class="text-xl text-white">VK Drinks</h1>
+                        <p class="text-red-600 mb-3 "> $8.99</p>
+                        <button
+                            class="font-serif font-bold text-white bg-blue-400 hover:bg-blue-700 py-2 px-5 rounded-md">Buy
+                            Now</button>
+                    </div>
+                </div>
+
+                <div class="mb-5 px-4 ">
+                    <!-- Drink5 -->
+                    <div data-aos="zoom-in-up" data-aos-delay="300"
+                        class="border p-5  rounded-xl text-center shadow hover:scale-105 transition duration-700 hover:shadow-md  ">
+                        <div
+                            class="bg-gray-900 rounded-lg text-center h-40 mb-4 flex justify-center items-center hover:scale-105 transition duration-700 cursor-pointer ">
+                            <img class="h-40 rounded-  bg-cover blur-0 w-full rounded "
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfzslKWnvHF4l7KJcRcKjVhjwhGoUsQaPU0w&s">
+                        </div>
+                        <h1 class="text-xl text-white">Cambodain </h1>
+                        <p class="text-red-600 mb-3 "> $8.99</p>
+                        <button
+                            class="font-serif font-bold text-white bg-blue-400 hover:bg-blue-700 py-2 px-5 rounded-md">Buy
+                            Now</button>
+                    </div>
+                </div>
+
+                <div class="mb-5 px-4 ">
+                    <!-- Drink6 -->
+                    <div data-aos="zoom-in-up" data-aos-delay="300"
+                        class="border p-5  rounded-xl text-center shadow hover:scale-105 transition duration-700 hover:shadow-md  ">
+                        <div
+                            class="bg-gray-900 rounded-lg text-center h-40 mb-4 flex justify-center items-center hover:scale-105 transition duration-700 cursor-pointer ">
+                            <img class="h-40 rounded-  bg-cover blur-0  w-screen  rounded "
+                                src="https://s5.kh1.co/__image/w=350,h=490,fit=contain/d5/d55e1284311b367825c789e5bf50af29824b0605.jpg">
+                        </div>
+                        <h1 class="text-xl text-white">ABC<span
+                                class="text-sm font-serif text-red-800 bg-red-200   mx-3">discount <i
+                                    class="fa-solid fa-tag" style="color: rgb(255, 0, 0);"></i></span></h1>
+                        <p class="text-red-600 mb-3 "><del class="text-white">$50.99</del> $9.99</p>
+                        <button
+                            class="font-serif font-bold text-white bg-blue-400 hover:bg-blue-700 py-2 px-5 rounded-md">Buy
+                            Now</button>
+                    </div>
+                </div>
+                <div class="mb-5 px-4 ">
+                    <!-- Drink7 -->
+                    <div data-aos="zoom-in-up" data-aos-delay="300"
+                        class="border p-5  rounded-xl text-center shadow hover:scale-105 duration-700 hover:shadow-md  ">
+                        <div
+                            class="bg-gray-900 rounded-lg text-center h-40 mb-4 flex justify-center items-center hover:scale-105  duration-700 cursor-pointer ">
+                            <img class="h-40 rounded-  bg-cover blur-0 w-full rounded "
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnNDd_EQ45_ADlpRlebq7z1YjWAINv2AWgZw&s">
+                        </div>
+                        <h1 class="text-xl text-white">GANZBERG <span class="text-sm font-serif text-red-800  ">50% <i
+                                    class="fa-solid fa-tag" style="color: rgb(255, 0, 0);"></i></span></h1>
+                        <p class="text-red-600 mb-3 "> $0.99</p>
+                        <button
+                            class="font-serif font-bold text-white bg-blue-400 hover:bg-blue-700 py-2 px-5 rounded-md">Buy
+                            Now</button>
+                    </div>
+                </div>
+
+                <div class="mb-5 px-4 ">
+                    <!-- Drink8 -->
+                    <div data-aos="zoom-in-up" data-aos-delay="300"
+                        class="border p-5  rounded-xl text-center shadow hover:scale-105 transition duration-700 hover:shadow-md  ">
+                        <div
+                            class="bg-gray-900 rounded-lg text-center h-40 mb-4 flex justify-center items-center hover:scale-105  duration-700 cursor-pointer ">
+                            <img class="h-40 rounded-  bg-cover blur-0 w-full rounded "
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkfXeSf8s1mVQx3Gjs7UZXSm_fZIT2vd0euA&s">
+                        </div>
+                        <h1 class="text-xl text-white">HUNUMANN</h1>
+                        <p class="text-red-600 mb-3 "> $18.99</p>
+                        <button
+                            class="font-serif font-bold text-white bg-blue-400 hover:bg-blue-700 py-2 px-5 rounded-md">Buy
+                            Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full justify-center items-center px-2 mb-8">
+                <div class="border-t border-gray-700 mt-8 pt-8 text-center w-full">
+                    <p class="text-white ">@Copyright 2030,All right Recovers</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="contace"
+        class=" max-h-screen bg-gray-300 py-16 shadow-lg flex items-center justify-center  px-5 mb-10 overflow-hidden rounded-md ">
+            
+        <div class="container mx-auto py-16  ">
+            <div class=" min-w-6xl w-full grid md:grid-cols-2 glass gap-2 rounded-lg">
+                <div class="flex items-center space-x-3">
+                    <div class="px-16 items-center justify-center">
+                         <h1 class="text-3xl text-center mb-7 font-bold underline ">My Contact</h1>
+                        <h1 class="text-4xl font-serif mb-4 text-amber-950 font-bold ">Wellcom to login <i
+                                class="fa-solid fa-mug-saucer" style="color: rgb(95, 44, 21);"></i> </h1>
+                        <p class="text-sm text--500 mb-5">Welcome to us what do you want to orders from <span
+                                class="font-bold text-gray-900">Fresh Coffee</span> send me a message for talking now...
+                        </p>
+
+                        <div class="text-sm text-gray-600 space-y-3 mb-5 ">
+                            <p><i class="fa-solid fa-location-dot text-red-600"></i> Siem Reap Citty</p>
+                            <p><i class="fa-solid fa-phone text-green-500"></i> +855 68473057</p>
+                            <p> <i class="fa-solid fa-envelope" style="color: rgb(95, 44, 21);"> </i>
+                                longdyCoffe@gmail.com</p>
+                        </div>
+
+                        <div>
+                            <div class="flex space-x-4 mb-2  ">
+                                <a class="hover:scale-125 transtion duration-700" href="#"><i
+                                        class="fa-solid fa-earth-americas" style="color: rgb(0, 125, 223);"></i></a>
+                                <a class="hover:scale-125 transtion duration-700" href="#"><i
+                                        class="fa-brands fa-facebook" style="color: rgb(0, 125, 223);"></i></a>
+                                <a class="hover:scale-125 transtion duration-700" href="#"><i
+                                        class="fa-brands fa-facebook-messenger"
+                                        style="color: rgb(0, 125, 223);"></i></a>
+                                <a class="hover:scale-125 transtion duration-700" href="#"><i
+                                        class="fa-brands fa-telegram" style="color: rgb(0, 143, 255);"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:w-full w-96 mx-8 px-4">
+                    <form class="space-y-4">
+
+                        <div class="py-5 px-4 ">
+                            <div class="mb-4">
+                                <input type="text" placeholder="Your nme"
+                                    class="   w-full p-3 rounded-xl border focus:ring-2 focus:ring-gray-500 outline-none bg-white/70 mb-5">
+                                <input type="email" placeholder="Your Email"
+                                    class="w-full p-3 border rounded-xl focus:ring-2 focus:ring-gray-500 outline-none bg-white">
+
+                            </div>
+                            <textarea name="" id="" placeholder="Your messagae"
+                                class="w-full py-15 rounded-xl border focus:ring focus:ring-gray-700 focus:outline-none bg-white ">
+
+                         </textarea>
+
+                            <button
+                                class="w-full py-2 bg-blue-500 hover:bg-red-700 transtion focus:bg-blue-500 focus:outline-none focus:ring-400 text-white font-bold rounded-xl hover:scale-105 transtion duration-700">Send
+                                Message</button>
+                        </div>
+                </div>
+                </form>
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+
+    <footer class="bg-gray-600 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <span class="text-xl font-bold"> Fresh Coffee</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, fugit?</p>
+                    <p class="" id="typing"></p>
+                </div>
+                <div class="">
+                    <h4 class="text-lg mb-4">MENU</h4>
+                    <ul>
+                        <li class="text-white hover:text-red-600 transtion duration-500">Home</li>
+                        <li class="text-white hover:text-red-600 transtion duration-500">Service</li>
+                        <li class="text-white hover:text-red-600 transtion duration-500">About</li>
+                        <li class="text-white hover:text-red-600 transtion duration-500">Contacet</li>
+                    </ul>
+                </div>
+                <div class="">
+                    <h4 class="text-lg mb-4">Services</h4>
+                    <ul>
+                        <li class="text-white hover:text-red-600 transtion duration-500">Home</li>
+                        <li class="text-white hover:text-red-600 transtion duration-500">Service</li>
+                        <li class="text-white hover:text-red-600 transtion duration-500">About</li>
+                        <li class="text-white hover:text-red-600 transtion duration-500">Contacet</li>
+                    </ul>
+                </div>
+                <div class="">
+                    <h4 class="text-lg mb-4">Support</h4>
+                    <ul>
+                        <li class="text-white hover:text-red-600 transtion duration-500">Home</li>
+                        <li class="text-white hover:text-red-600 transtion duration-500">Service</li>
+                        <li class="text-white hover:text-red-600 transtion duration-500">About</li>
+                        <li class="text-white hover:text-red-600 transtion duration-500">Contacet</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p>@Copyright 2030,All right Recovers</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        new Typed("#typing", {
+            strings: ["to Fresh Coffee ☕", "Best drink in town ❤️"],
+            typeSpeed: 80,
+            backSpeed: 50,
+            loop: true
+        })
+
+        new Typed('#text', {
+            strings: ['Please', 'Orders', 'Now📤'],
+            typeSpeed50: 50,
+            backSpeed: 50,
+            loop: true,
+            duration: 1.2,
+        })
+    </script>
+
+
+    <script>
+        AOS.init({
+            duration: 1000, // animation រយៈពេល 1 វិនាទី
+            once: true,         // animate តែម្តង
+            offset: 120,   // animate មុនពេលដល់ element
+            easing: "ease-in-out"
+        });
+    </script>
+</body>
+
+</html>
